@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Run the script") {
             steps {
-                sh "./pyscript.py"
+                sh "./script"
             }
         }
     }
