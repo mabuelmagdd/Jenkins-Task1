@@ -9,7 +9,7 @@ pipeline {
         stage("Run the script") {
             steps {
                 script {
-                    sh 'sudo chmod +x script.sh'  // Corrected this line
+                    sh 'chmod +x script.sh'  // Corrected this line
                     sh './script.sh'
                 }
             }
