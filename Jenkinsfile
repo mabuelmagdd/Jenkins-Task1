@@ -8,6 +8,7 @@ pipeline {
         }
         stage("Run the script") {
             steps {
+                sh "sudo chmod +x script" 
                 sh "./script"
             }
         }
